@@ -42,3 +42,5 @@ public class vending {
     }
 
 }
+
+//compile testVending.java
