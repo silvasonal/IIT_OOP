@@ -7,3 +7,5 @@ class Question2 {
     }
     
 }
+
+// Compile Test.java
