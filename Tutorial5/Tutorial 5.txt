@@ -1,0 +1,107 @@
+1)
+
+public class calcManager {
+
+    private int n;
+    private int x;
+    private int y;
+
+    public boolean isEven(int n) {
+        if (n % 2 == 0) {
+            return true;
+        }
+        return false;
+    }
+
+   int returnCube(int n){
+        int cube = n*n*n;
+        return cube;
+    }
+
+    double add(int n, int x, int y){
+        int add = n+x+y;
+        return add;
+    }
+
+
+
+
+   public static void main(String[] args) {
+        calcManager number = new calcManager();
+        System.out.println(number.isEven(7));
+        System.out.println(number.isEven(20));
+        System.out.println(number.returnCube(5));
+        System.out.println(number.add(5,20,35));
+
+    }
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+2.
+
+e1 contains: Name: John, 77 Exhibition Road London
+e2 contains: Name: George, 77 Exhibition Road London
+e3 contains: Name: Helen, 77 Exhibition Road London
+
+After e1.company_address = a2
+e1 contains: Name: John, 5 Guilford Road York
+e2 contains: Name: George, 5 Guilford Road York
+e3 contains: Name: Helen, 5 Guilford Road York
+
+Memory location for e1.company_address object: Address@682a0b20
+Memory location for e2.company_address object: Address@682a0b20
+Memory location for e3.company_address object: Address@682a0b20
+
+e1.numberOfEmployees: 3
+e2.numberOfEmployees: 3
+e3.numberOfEmployees: 3
+
+---------------------------------------------------------------------------------------------------
+3.
+
+
+---------------------------------------------------------------------------------------------------
+
+4.  Cannot inherit from final class
+
+public class X1 {
+}
+class X2 extends X1 {
+public  void foo() {
+System.out.println("foo() called in X2");
+}
+}
+class X3 extends X2 {
+// overriding foo() of X2
+public void foo() {
+System.out.println("foo() called in X3");
+}
+}
+
+---------------------------------------------------------------------------------------------------
+
+5.
+
+i) 
+
+Cell constructor called
+TinyCell constructor called
+MicroscopicCell constructor called
+
+ii)
+
+The default constructor (i.e. the constructor with no
+arguments) of the direct superclass of the object is called.
+The constructor of the superclass will invoke the constructor
+of its own superclass and so on, until the constructor of the
+parent class of all classes java.lang.Object is called.
+
+---------------------------------------------------------------------------------------------------
+
+6.
+
+Treenode-> data: 100
+Vertex-> x: 500, y: 400
+---------------------------------------------------------------------------------------------------
